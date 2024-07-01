@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todo.css">
+    <script src="todo.js"></script>
+</head>
+
+<body>
+    <!-- <div class="containeer"> -->
+
+    <div class="container">
+        <img src="https://icons.iconarchive.com/icons/microsoft/fluentui-emoji-flat/128/Palm-Tree-Flat-icon.png" alt=""
+            style="width: 110px; height: 110px;" srcset="">
+        <h2> FAR AWAY </h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Suitcase_Flat_Icon_Vector.svg/512px-Suitcase_Flat_Icon_Vector.svg.png?20180301083157"
+            style="width: 110px; height: 110px;" alt="" srcset="">
+    </div>
+    <div class="session">
+        <div class="leftsession">
+            <p class="seesion-para">What do you need for your trip?</p>
+        </div>
+        <div class="rightsession">
+
+            <select class="session-select" id="select-options">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input type="text" class="session-input" id="input-box" placeholder="items..">
+            <button type="button" class="btn" id="add-button" onclick="addTask()">Add</button>
+        </div>
+    </div>
+
+
+    <div class="content" id="task-container">
+        <!-- <div id="list-container">
+        <input type="checkbox" name="checkbox" onclick="updatePercentage()">
+        <div class="item-number">4443</div>
+        <div class="item-name">fds</div>
+        <button class="remove" onclick="removeTask()">X</button>
+    </div>
+    <div id="list-container">
+        <input type="checkbox" name="checkbox" onclick="updatePercentage()">
+        <div class="item-number">43</div>
+        <div class="item-name">what</div>
+        <button class="remove" onclick="removeTask()">X</button>
+    </div>
+    <div id="list-container">
+        <input type="checkbox" name="checkbox" onclick="updatePercentage()">
+        <div class="item-number">43</div>
+        <div class="item-name">ahat</div>
+        <button class="remove" onclick="removeTask()">X</button>
+    </div>
+    <div id="list-container">
+        <input type="checkbox" name="checkbox" onclick="updatePercentage()">
+        <div class="item-number">3</div>
+        <div class="item-name">ahat</div>
+        <button class="remove" onclick="removeTask()">X</button>
+    </div>
+    <div id="list-container">
+        <input type="checkbox" name="checkbox">
+        <div class="item-number">1</div>
+        <div class="item-name">ahat</div>
+        <button class="remove" onclick="removeTask()">X</button>
+    </div> -->
+
+</div>
+<!-- <button type="button" onclick="updatePercentage()">Percentage</button>
+
+<div id="percentage-display">Checked Items: 0%</div> -->
+    <div class="buttons">
+        <select class="buttons-select" name="" id="select-order" onchange="sortOrder()">
+            <option value="Sort Direction">Sort By Direction</option>
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+        </select>
+        <!-- <button  onclick="ascOrder()">Assce</button> -->
+        <button class="button-clear" id="clear-button" onclick="clearAll()">Clear</button>
+    </div>
+    <div class="footer">
+        <h3 id="count-items">Start adding some items to your packing list</h5>
+    </div>
+    <!-- </div> -->
+</body>
+
+</html>
