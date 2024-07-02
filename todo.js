@@ -1,8 +1,4 @@
-console.log("first")
 // Add Button
-// let clearbutton = document.getElementById("clear-button");
-
-
 function addTask(){
     var selectNumber = document.getElementById("select-options");
     var taskContainer = document.getElementById("task-container");
@@ -43,12 +39,12 @@ checkBox.onchange= function(){
                 itemNumber.style.textDecoration = "line-through";
                 itemName.style.textDecoration = "line-through";
      
-                document.getElementById('count-items').innerText = `total items you have ${totalItems} Checked Items:${checkedItems},(${percentage.toFixed(2)}%)`;
+                document.getElementById('footer-text').innerText = `total items you have ${totalItems} Checked Items:${checkedItems},(${percentage}%)`;
                 
         } else {
             itemNumber.style.textDecoration = "none";
             itemName.style.textDecoration = "none";
-            document.getElementById('count-items').innerText = `total items you have ${totalItems} Checked Items:${checkedItems},(${percentage.toFixed(2)}%)`;
+            document.getElementById('footer-text').innerText = `total items you have ${totalItems} Checked Items:${checkedItems},(${percentage}%)`;
         }
 
     
@@ -84,7 +80,7 @@ listName.className = "item-name"
         // Function to update the count
 function updateCount() {
     const listItems = taskContainer.querySelectorAll('#list-container').length;
-    const footer = document.getElementById("count-items");
+    const footer = document.getElementById("footer-text");
 
     if(listItems == 0){
  footer.innerText = `Start adding some items to your packing list`
@@ -111,6 +107,8 @@ updateCount()
 function clearAll(){
     const removeTasks = document.getElementById("task-container");
     removeTasks.innerHTML="";
+       let  footer = document.getElementById("footer-text");
+footer.innerText = "Start adding some items to your packing list"
 };
 
 // Sorting of tasks
